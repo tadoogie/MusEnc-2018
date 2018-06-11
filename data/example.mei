@@ -360,6 +360,15 @@
       </revisionDesc>
    </meiHead>
    <music>
+      <performance>
+         <recording begin="00:00:00.00" end="00:02:25.00" betype="time" n="completeWork">
+            <avFile targettype="youtube" target="https://www.youtube.com/watch?v=_-ozK57r7UE"/>
+            <clip begin="00:00:00.00" end="00:00:02.30" betype="time" n="m1" startid="#d414233e9"></clip>
+            <clip begin="00:00:02.30" end="00:00:03.50" betype="time" n="m2" startid="#d414233e371"></clip>
+            <clip begin="00:00:03.50" end="00:00:05.00" betype="time" n="m3" startid="#d414233e709"></clip>
+            <clip begin="00:00:05.00" end="00:00:05.50" betype="time" n="m4" startid="#d414233e1053"></clip>
+         </recording>
+      </performance>
       <body>
          <mdiv>
             <score>
