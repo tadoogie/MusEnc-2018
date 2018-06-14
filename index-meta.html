@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>My DHSI Music Encoding Project</title>
+    <meta charset="utf-8">
+    <meta name="description" content="My project">
+    <meta name="author" content="Me">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <script src="js/verovio-toolkit.js"></script>
+    <script src="js/utils.js"></script>
+  </head>
+
+  <body>
+
+    <div id="content">
+      <!-- ADD YOUR HTML CONTENT HERE! -->
+      <h1>My project</h1>
+      <p id="meta"></p>
+
+    </div>
+
+    <!-- **** DO NO EDIT BELOW THIS LINE **** -->
+    <!-- * **** **** **** **** **** **** **** -->
+    <div id="score">
+      <!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
+    </div>
+    <!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
+<!--    <script src="js/index.js"></script>-->
+    <script>
+      var text, parser, xmlDoc;
+
+      text = new XMLHttpRequest();
+      text.open('GET', 'data/example.mei') // <-- change this to the right file
+      text.send(null)
+
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(text, "text/xml");
+
+      document.getElementById("meta").innerHTML =
+      xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    </script>
+  </body>
+
+</html>
