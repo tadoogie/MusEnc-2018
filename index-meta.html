@@ -16,6 +16,7 @@
     <div id="content">
       <!-- ADD YOUR HTML CONTENT HERE! -->
       <h1>My project</h1>
+      <h2>Metadata</h2>
       <p id="meta"></p>
 
     </div>
@@ -26,19 +27,24 @@
       <!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
     </div>
     <!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
-<!--    <script src="js/index.js"></script>-->
+   <script src="js/index.js"></script>
     <script>
-      var text, parser, xmlDoc;
+      var xhr = new XMLHttpRequest()
+      xhr.open('GET', 'data/example.mei') // <-- change this to the right file
+      xhr.send(null)
 
-      text = new XMLHttpRequest();
-      text.open('GET', 'data/example.mei') // <-- change this to the right file
-      text.send(null)
-
-      parser = new DOMParser();
-      xmlDoc = parser.parseFromString(text, "text/xml");
-
-      document.getElementById("meta").innerHTML =
-      xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+      /* Deal with the response */
+      xhr.onreadystatechange = function () {
+        var DONE = 4
+        var OK = 200
+        if (xhr.readyState === DONE) {
+          if (xhr.status === OK) {
+            var parser = new DOMParser()
+            var meiDoc = parser.parseFromString(xhr.responseText,"text/xml")
+            document.querySelector("#meta").innerHTML += meiDoc.querySelector("[*|id='titlesdfndsjkfbsjh']").textContent
+          }
+        }
+      }
     </script>
   </body>
 

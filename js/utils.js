@@ -15,6 +15,7 @@ function showScore(id, path) {
 
         /* Place Verovio's output on the page */
         document.getElementById(id).innerHTML = svg
+        document.querySelector('#d414233e38').style.fill = "Blue"
       } else {
         /* Tell us an error happened */
         console.log('Error: ' + xhr.status)
