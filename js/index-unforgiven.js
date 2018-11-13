@@ -3,7 +3,7 @@
 /* Some global variables */
 ///////////////////////////
 var vrvToolkit = new verovio.toolkit();
-var zoom = 150;
+var zoom = 30;
 var pageHeight = 2970;
 var pageWidth = 2100;
 
