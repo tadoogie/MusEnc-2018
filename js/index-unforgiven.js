@@ -1,23 +1,29 @@
 /* This script loads the MEI file via HTTP request */
+///////////////////////////
+/* Some global variables */
+///////////////////////////
+var vrvToolkit = new verovio.toolkit();
+var zoom = 30;
+var pageHeight = 2970;
+var pageWidth = 2100;
 
-/* Start Verovio */
-var vrvToolkit = new verovio.toolkit()
-
-/* Setup Verovio - adjust the options below */
-var zoom = 60
-var content = document.getElementById('content')
-var contentHeight = 800
-if (content) {
-  contentHeight = content.offsetHeight
+///////////////////////////////////////////////////
+/* A function for setting options to the toolkit */
+///////////////////////////////////////////////////
+function setOptions() {
+    //////////////////////////////////////////////////////////////
+    /* Adjust the height and width according to the window size */
+    //////////////////////////////////////////////////////////////
+    pageHeight = $(document).height() * 100 / zoom ;
+    pageWidth = $(window).width() * 100 / zoom ;
+    options = {
+                pageHeight: pageHeight,
+                pageWidth: pageWidth,
+                scale: zoom,
+                adjustPageHeight: true
+            };
+    vrvToolkit.setOptions(options);
 }
-var defaultHeight = document.documentElement.clientHeight - contentHeight
-var defaultWidth = document.documentElement.clientWidth - 50
-options = {
-    pageHeight: defaultHeight * 100 / zoom,
-    pageWidth: defaultWidth * 100 / zoom,
-    scale: zoom
-}
-vrvToolkit.setOptions(options)
 
 /* Show the score */
 showScore('score', 'data/the_unforgiven.mei') // <-- CHANGE THIS TO YOUR FILE
