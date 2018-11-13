@@ -6,7 +6,7 @@ var vrvToolkit = new verovio.toolkit()
 /* Setup Verovio - adjust the options below */
 var zoom = 60
 var content = document.getElementById('content')
-var contentHeight = 50
+var contentHeight = 200
 if (content) {
   contentHeight = content.offsetHeight
 }
