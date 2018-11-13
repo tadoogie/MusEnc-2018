@@ -3,9 +3,9 @@
 /* Some global variables */
 ///////////////////////////
 var vrvToolkit = new verovio.toolkit();
-var zoom = 90;
+var zoom = 150;
 var pageHeight = 2970;
-/*var pageWidth = 2100;
+var pageWidth = 2100;
 
 ///////////////////////////////////////////////////
 /* A function for setting options to the toolkit */
