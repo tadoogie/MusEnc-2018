@@ -1,6 +1,25 @@
 /* Add your own CSS rules here */
 h1 {
-  text-align: center;
+  text-align: left;
+  font-family: "Arial";
+  font-size: 18pt;
+}
+
+h2 {
+  text-align: left;
+  font-family: "Arial";
+  font-size: 14pt;
+  text-decoration: underline;
+}
+
+body {
+  text-align: left;
+  font-family: "Arial";
+  font-size: 12pt;
+}
+
+li{
+  margin: 10px 0;
 }
 
 g[class='note'] {

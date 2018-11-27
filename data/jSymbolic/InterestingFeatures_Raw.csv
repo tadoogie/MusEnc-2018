@@ -1,0 +1,5 @@
+Song,Prevalence_of_Most_Common_Pitch,Number_of_Common_Pitches,Range,Most_Common_Pitch,Mean_Pitch,Importance of Bass Register,Importance of Middle Register,Importance of High Register,Mean_Melodic_Interval
+Hello,0.06904,0,67,51,60,0.3803,0.3746,0.2451,6.58
+Rolling In The Deep,0.09655,1,50,48,58,0.4524,0.382,0.1656,5.53
+Set Fire To The Rain,0.1296,4,48,62,53,0.4751,0.5242,7.01E-04,5.922
+When We Were Young,0.1726,2,38,63,52,0.3753,0.6247,0,7.78
