@@ -3,6 +3,7 @@ h1 {
   text-align: left;
   font-family: "Arial";
   font-size: 18pt;
+  color: #ff5348;
 }
 
 h2 {
@@ -15,7 +16,8 @@ h2 {
 body {
   text-align: left;
   font-family: "Arial";
-  font-size: 12pt;
+  font-size: 12pt; 
+  background-image: url("data/background.jpeg");
 }
 
 li{
@@ -32,4 +34,13 @@ g[class='note'] {
 
 #controls {
   float: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+	text-align: center;
+}
+
+a {
+	color: #ff5348;
 }
