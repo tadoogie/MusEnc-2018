@@ -1,9 +1,10 @@
 /* Add your own CSS rules here */
 h1 {
   text-align: left;
-  font-family: "Arial";
-  font-size: 18pt;
-  color: #ff5348;
+  font-family: "Arial Black";
+  font-size: 20pt;
+  color: #E81E46;
+  text-decoration: underline;
 }
 
 h2 {
@@ -11,13 +12,17 @@ h2 {
   font-family: "Arial";
   font-size: 14pt;
   text-decoration: underline;
+  color: #011627;
 }
 
 body {
+  background-image: url("background.png");
+  background-repeat:no-repeat;
+  background-size:cover;
   text-align: left;
   font-family: "Arial";
-  font-size: 12pt; 
-  background-image: url("data/background.jpeg");
+  font-size: 12pt
+  text-color: ; 
 }
 
 li{
@@ -41,11 +46,13 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid grey;
 	text-align: center;
 	padding: 5px 10px
 }
 
+
+
 a {
-	color: #ff5348;
+	color: #1d998d;
 }
