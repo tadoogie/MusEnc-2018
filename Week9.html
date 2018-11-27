@@ -4,62 +4,82 @@
 	<head>
 		<title>My Music Encoding Project</title>
 		<meta charset="utf-8">
-		<meta name="description" content="My project">
-		<meta name="author" content="Me">
+		<meta name="description" content="This is my project for the Music Curation and Analytics course at the Univeristy of Glasgow 2018">
+		<meta name="author" content="Kieran Thomson">
 		<link rel="stylesheet" href="css/style.css" media="all" />
-		<script src="js/verovio-toolkit.js"></script>
-		<script src="js/utils.js"></script>
 	</head>
 
 	<nav>
-		<a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/240px-Home-icon.svg.png" alt="Home Icon" style="float:right;width:35px;height:35px;"></a>
+	<a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/240px-Home-icon.svg.png" alt="Home Icon" style="float:right;width:35px;height:35px;"></a>
 	</nav>
 	
 	<body>
+		
+		<h1>My Music Encoding Project</h1>
+		<h1>Project Dataset: Adele</h1>
 
-		<div id="content">
-			<!-- ADD YOUR HTML CONTENT HERE! -->
-			<h1>My Music Encoding Project</h1>
-			<h2>Project Dataset: Adele</h2>
-			<h3>Metadata</h3>
-			<p id="meta"></p>
-		</div>
+  <!-- Task 1 content-->			
+		<h2>Task 1: Extract Features</h2>	
+		<p>After downloading three tracks from three different genres from a free online source, I loaded the tracks into SonicVisualiser and produced
+		a Spectrogram, Mel Frequency Cepstral Coefficients and Chromagram for each track. The images can be see below with links to download the raw CSV data</p>
 
-		<!-- **** DO NO EDIT BELOW THIS LINE **** -->
-		<!-- * **** **** **** **** **** **** **** -->
-		<div id="controls">
-			<button id="prev">&lt;</button>
-			<button id="next">&gt;</button>
-		</div>
 	
-		<div id="score">
-			<!-- THIS IS WHERE THE SCORE GOES AUTOMATICALLY -->
-		</div>
-		<!-- THIS CALLS THE SCRIPT THAT GETS THE MEI SCORE -->
-		<script src="js/index.js"></script>
-			<script>
-				var xhr = new XMLHttpRequest()
-				xhr.open('GET', 'data/Hello.mei') // <-- change this to the right file
-				xhr.send(null)
-
-				/* Deal with the response */
-				xhr.onreadystatechange = function () {
-					var DONE = 4
-					var OK = 200
-					if (xhr.readyState === DONE) {
-						if (xhr.status === OK) {
-							var parser = new DOMParser()
-							var meiDoc = parser.parseFromString(xhr.responseText,"text/xml")
-							/* If your element has an authURI attribute, copy the folloiwng line, being sure to replace the "MY-XML-ID" with your element's actual xml:id.
-							document.querySelector("#meta").innerHTML += "<a href=\"" + meiDoc.querySelector("[*|id='MY-XML-ID']").getAttribute('authURI') +"\"><p>" + meiDoc.querySelector("[*|id='MY-XML-ID']").textContent + "</p></a>"
-							*/
-							/* If your element does not have an authURI attribute, copy the following line, being sure to replace the "MY-XML-ID" with your element's actual xml:id.
-							document.querySelector("#meta").innerHTML += "<p>" + meiDoc.querySelector("[*|id='m-8']").textContent + "</p>"
-							*/
-						}
-					}
-				}
-			</script>
-		</body>
-
+		<table style="width:100%;padding: 5px 10px">
+			<tr>
+				<th style="width:10%">Song</th>
+				<th>Chromagram / Mel Frequency Cepstral Coefficients / Spectrogram</th> 
+			</tr>		
+			<tr>
+				<th>Farewell - Thorn Shout
+					<ul>
+						<li><a href="data/Week9/Farewell_MFCC.csv">MFCC CSV file</a></li>
+						<li><a href="data/Week9/Farewell_Chromagram.csv">Chromagram CSV file</a></li>
+					</ul>
+				</th>
+				<th><img src="data/Week9/Farewell_Chromagram.png" alt="Chromagram for Farewell" width="90%">
+				<img src="data/Week9/Farewell_MFCC.png" alt="Mel Frequency Cepstral Coefficients for Farewell" width="90%">
+				<img src="data/Week9/Farewell_Spectrogram.png" alt="Spectrogram for Farewell" width="90%"></th>	
+			</tr>
+			<tr>
+				<th>Hachiko (The Faithful Dog) - The Kyoyo Connection
+					<ul>
+						<li><a href="data/Week9/The_Faithful_Dog_MFCC.csv">MFCC CSV file</a></li>
+						<li><a href="data/Week9/The_Faithful_Dog_Chromagram.csv">Chromagram CSV file</a></li>
+					</ul>
+				</th>
+				<th><img src="data/Week9/The_Faithful_Dog_Chromagram.png" alt="Chromagram for The Faithful Dog" width="90%">
+				<img src="data/Week9/The_Faithful_Dog_MFCC.png" alt="Mel Frequency Cepstral Coefficients for The Faithful Dog" width="90%">
+				<img src="data/Week9/The_Faithful_Dog_Spectrogram.png" alt="Spectrogram for The Faithful Dog" width="90%"></th>	
+			</tr>
+			<tr>
+				<th>woah - Vincent Augustus
+					<ul>
+						<li><a href="data/Week9/woah_MFCC.csv">MFCC CSV file</a></li>
+						<li><a href="data/Week9/woah_Chromagram.csv">Chromagram CSV file</a></li>
+					</ul>
+				</th>
+				<th><img src="data/Week9/woah_Chromagram.png" alt="Chromagram for woah" width="90%">
+				<img src="data/Week9/woah_MFCC.png" alt="Mel Frequency Cepstral Coefficients for woah" width="90%">
+				<img src="data/Week9/woah_Spectrogram.png" alt="Spectrogram for woah" width="90%"></th>	
+			</tr>		
+		</table>
+		<br />
+		
+  <!-- Task 2 Content -->
+		<h2>Task 2: Compute and Visualise Histograms</h2>
+		<p>In this task I loaded the raw MFCC features into Python and computed the histograms for the features in the three tracks.</p>
+		<table style="width:100%;padding: 5px 10px">
+			<tr>
+				<th>Farewell  |  Hachiko (The Faithful Dog)  |  woah</th> 
+			</tr>		
+			<tr>
+				<th><img src="data/Week9/farewellMFCC_histogram.png" alt="MFCC Histogram for Farewell" width="33%">
+				<img src="data/Week9/The_Faithful_DogMFCC_histogram.png" alt="MFCC Histogram for The Faithful Dog" width="33%">
+				<img src="data/Week9/woahMFCC_histogram.png" alt="MFCC Histogram for woah" width="33%"></th>	
+			</tr>
+			<tr>
+				<th><p align="left">ANALYSIS GOES HERE</p></th>
+			</tr>
+		</table>
+</body>
 </html>
