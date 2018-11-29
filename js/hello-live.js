@@ -20,4 +20,4 @@ options = {
 vrvToolkit.setOptions(options)
 
 /* Show the score */
-showScore('score', 'data/Hello-ExtraInfo.mei') // <-- CHANGE THIS TO YOUR FILE
+showScore('score', 'data/Hello-ExtraIntro.mei') // <-- CHANGE THIS TO YOUR FILE
