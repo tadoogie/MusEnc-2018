@@ -3,12 +3,44 @@
 <?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
     <meiHead>
-        <fileDesc>
+    <fileDesc>
+        <titleStmt>
+            <title>When We Were Young</title>
+            <arranger>SheetsDaily</arranger>
+            <date>2016</date>
+            <respStmt>
+              <resp>Encoded by</resp>
+              <resp>Kieran Thomson</resp>
+            </respStmt>
+        </titleStmt>
+
+        <extent unit="Kbytes">184</extent>
+
+        <seriesStmt>
+          <title>Music Curation and Analytics Encoded Music Collection</title>
+          <editor>Kieran Thomson</editor>
+          <contents>
+            <p>Set Fire To The Rain, Adele -- Hello, Adele -- When We Were Young, Adele -- Rolling In The Deep, Adele</p>
+          </contents>
+        </seriesStmt>
+
+        <sourceDesc>
+          <source>
             <titleStmt>
-                <title>When We Were Young</title>
+              <title>When We Were Young</title>
+              <respStmt>
+                <persName role="writer">Adele Adkins</persName>
+                <persName role="writer">Tobias Jesso Jr.</persName>
+                <persName role="producer">Ariel Rechtshaid</persName>
+              </respStmt>
             </titleStmt>
-            <pubStmt></pubStmt>
-        </fileDesc>
+            <pubStmt>
+              <title>When We Were Young</title>
+              <pubPlace>London</pubPlace>
+              <date>2016</date>
+            </pubStmt>
+        </sourceDesc>
+      </fileDesc>        
         <encodingDesc xml:id="encodingdesc-0000000566888234">
             <appInfo xml:id="appinfo-0000000708455228">
                 <application xml:id="application-0000001972990740" isodate="2018-11-13T14:44:45" version="2.0.0-dev-ddb553a">

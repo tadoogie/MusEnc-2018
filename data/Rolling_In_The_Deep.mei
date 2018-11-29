@@ -3,12 +3,44 @@
 <?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
     <meiHead>
-        <fileDesc>
+    <fileDesc>
+        <titleStmt>
+            <title>Rolling In The Deep</title>
+            <arranger>SheetsDaily</arranger>
+            <date>2010</date>
+            <respStmt>
+              <resp>Encoded by</resp>
+              <resp>Kieran Thomson</resp>
+            </respStmt>
+        </titleStmt>
+
+        <extent unit="Kbytes">393</extent>
+
+        <seriesStmt>
+          <title>Music Curation and Analytics Encoded Music Collection</title>
+          <editor>Kieran Thomson</editor>
+          <contents>
+            <p>Set Fire To The Rain, Adele -- Hello, Adele -- When We Were Young, Adele -- Rolling In The Deep, Adele</p>
+          </contents>
+        </seriesStmt>
+
+        <sourceDesc>
+          <source>
             <titleStmt>
-                <title>Rolling In The Deep</title>
+              <title>Rolling In The Deep</title>
+              <respStmt>
+                <persName role="writer">Adele Adkins</persName>
+                <persName role="writer">Paul Epworth</persName>
+                <persName role="producer">Paul Epworth</persName>
+              </respStmt>
             </titleStmt>
-            <pubStmt></pubStmt>
-        </fileDesc>
+            <pubStmt>
+              <title>Rolling In The Deep</title>
+              <pubPlace>London</pubPlace>
+              <date>2010</date>
+            </pubStmt>
+        </sourceDesc>
+     </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000001146226001">
             <appInfo xml:id="appinfo-0000000587045697">
                 <application xml:id="application-0000000507125554" isodate="2018-11-13T19:42:41" version="2.0.0-dev-ddb553a">

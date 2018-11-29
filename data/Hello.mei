@@ -3,12 +3,44 @@
 <?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
     <meiHead>
-        <fileDesc>
+    <fileDesc>
+        <titleStmt>
+            <title>Hello</title>
+            <arranger>SheetsDaily</arranger>
+            <date>2015</date>
+            <respStmt>
+              <resp>Encoded by</resp>
+              <resp>Kieran Thomson</resp>
+            </respStmt>
+        </titleStmt>
+
+        <extent unit="Kbytes">511</extent>
+
+        <seriesStmt>
+          <title>Music Curation and Analytics Encoded Music Collection</title>
+          <editor>Kieran Thomson</editor>
+          <contents>
+            <p>Set Fire To The Rain, Adele -- Hello, Adele -- When We Were Young, Adele -- Rolling In The Deep, Adele</p>
+          </contents>
+        </seriesStmt>
+
+        <sourceDesc>
+          <source>
             <titleStmt>
-                <title>Hello</title>
+              <title>Hello</title>
+              <respStmt>
+                <persName role="writer">Adele Adkins</persName>
+                <persName role="writer">Greg Kurstin</persName>
+                <persName role="producer">Greg Kurstin</persName>
+              </respStmt>
             </titleStmt>
-            <pubStmt></pubStmt>
-        </fileDesc>
+            <pubStmt>
+              <title>Hello</title>
+              <pubPlace>London</pubPlace>
+              <date>2015</date>
+            </pubStmt>
+        </sourceDesc>
+    </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000001312852434">
             <appInfo xml:id="appinfo-0000001449847425">
                 <application xml:id="application-0000000500988189" isodate="2018-11-20T11:49:23" version="2.0.0-dev-e42e3a6">
