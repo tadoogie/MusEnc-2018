@@ -20,4 +20,4 @@ options = {
 vrvToolkit.setOptions(options)
 
 /* Show the score */
-showScore('score', 'data/Rolling_In_The_Deep-live.mei') // <-- CHANGE THIS TO YOUR FILE
+showScore('score', 'data/Rolling_In_The_Deep_ExtraIntro.mei') // <-- CHANGE THIS TO YOUR FILE
