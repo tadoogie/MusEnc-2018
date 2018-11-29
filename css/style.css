@@ -52,7 +52,10 @@ table, th, td {
 }
 
 
-
 a {
 	color: #1d998d;
 }
+
+h4 { font-size: 20pt;
+	text-decoration: underline;
+	text-align:center}
