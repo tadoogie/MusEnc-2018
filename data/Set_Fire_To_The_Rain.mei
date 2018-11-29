@@ -29,9 +29,9 @@
                 <titleStmt>
                   <title>Set Fire To The Rain</title>
                   <respStmt>
-                    <persName role="writer">Adele Adkins</persName>
-                    <persName role="writer">Fraser T Smith</persName>
-                    <persName role="producer">Fraser T Smith</persName>
+                    <persName role="writer" authURI="https://en.wikipedia.org/wiki/Set_Fire_to_the_Rain" authority="Wikipedia" xml:id="writer1">Adele Adkins</persName>
+                    <persName role="writer" authURI="https://en.wikipedia.org/wiki/Set_Fire_to_the_Rain" authority="Wikipedia" xml:id="writer2">Fraser T Smith</persName>
+                    <persName role="producer" authURI="https://en.wikipedia.org/wiki/Set_Fire_to_the_Rain" authority="Wikipedia" xml:id="producer">Fraser T Smith</persName>
                   </respStmt>
                 </titleStmt>
                 <pubStmt>
@@ -39,6 +39,7 @@
                   <pubPlace>Columbia</pubPlace>
                   <date>2011</date>
                 </pubStmt>
+              </source>
             </sourceDesc>
         </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000001684189864">

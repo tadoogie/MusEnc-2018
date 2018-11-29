@@ -29,9 +29,9 @@
             <titleStmt>
               <title>When We Were Young</title>
               <respStmt>
-                <persName role="writer">Adele Adkins</persName>
-                <persName role="writer">Tobias Jesso Jr.</persName>
-                <persName role="producer">Ariel Rechtshaid</persName>
+                <persName role="writer" authURI="https://en.wikipedia.org/wiki/When_We_Were_Young_(Adele_song)" authority="Wikipedia" xml:id="writer1">Adele Adkins</persName>
+                <persName role="writer" authURI="https://en.wikipedia.org/wiki/When_We_Were_Young_(Adele_song)" authority="Wikipedia" xml:id="writer2">Tobias Jesso Jr.</persName>
+                <persName role="producer" "https://en.wikipedia.org/wiki/When_We_Were_Young_(Adele_song)" authority="Wikipedia" xml:id="producer">Ariel Rechtshaid</persName>
               </respStmt>
             </titleStmt>
             <pubStmt>
@@ -39,8 +39,9 @@
               <pubPlace>London</pubPlace>
               <date>2016</date>
             </pubStmt>
+          </source>
         </sourceDesc>
-      </fileDesc>        
+      </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000000566888234">
             <appInfo xml:id="appinfo-0000000708455228">
                 <application xml:id="application-0000001972990740" isodate="2018-11-13T14:44:45" version="2.0.0-dev-ddb553a">

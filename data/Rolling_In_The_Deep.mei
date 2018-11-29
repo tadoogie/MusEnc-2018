@@ -29,9 +29,9 @@
             <titleStmt>
               <title>Rolling In The Deep</title>
               <respStmt>
-                <persName role="writer">Adele Adkins</persName>
-                <persName role="writer">Paul Epworth</persName>
-                <persName role="producer">Paul Epworth</persName>
+                <persName role="writer" authURI="https://en.wikipedia.org/wiki/Rolling_in_the_Deep" authority="Wikipedia" xml:id="writer1">Adele Adkins</persName>
+                <persName role="writer" authURI="https://en.wikipedia.org/wiki/Rolling_in_the_Deep" authority="Wikipedia" xml:id="writer2">Paul Epworth</persName>
+                <persName role="producer" authURI="https://en.wikipedia.org/wiki/Rolling_in_the_Deep" authority="Wikipedia" xml:id="producer">Paul Epworth</persName>
               </respStmt>
             </titleStmt>
             <pubStmt>
@@ -39,6 +39,7 @@
               <pubPlace>London</pubPlace>
               <date>2010</date>
             </pubStmt>
+          </source>
         </sourceDesc>
      </fileDesc>
         <encodingDesc xml:id="encodingdesc-0000001146226001">
