@@ -20,4 +20,4 @@ options = {
 vrvToolkit.setOptions(options)
 
 /* Show the score */
-showScore('score', 'data/Set_Fire_To_The_Rain..mei') // <-- CHANGE THIS TO YOUR FILE
+showScore('score', 'data/Set_Fire_To_The_Rain.mei') // <-- CHANGE THIS TO YOUR FILE
