@@ -14,4 +14,4 @@ Acoustic Data
 		Described in waveforms
 		
 Notated Data
-	Sheet Music available on places such as MuseScore, GuitarTabs etc
+	Sheet Music available on places such as MuseScore, GuitarTabs, SheetsDaily etc
